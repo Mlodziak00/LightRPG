@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "lightrpg",
+	"version": "${version}",
+	"name": "Light RPG",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mlodziak00"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lightrpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lightglow.lightrpg.LightRPG"
+		],
+		"client": [
+			"net.lightglow.lightrpg.client.LightRPGClient"
+		],
+		"fabric-datagen": [
+			"net.lightglow.lightrpg.LightRPGDataGenerator"
+		],
+		"cardinal-components-entity": [
+			"net.lightglow.lightrpg.component.EntityLightRPGComponents"
+		]
+	},
+	"mixins": [
+		"lightrpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"cardinal-components": [
+			"lightrpg:appearance",
+			"lightrpg:impact"
+		]
+
+	}
+}

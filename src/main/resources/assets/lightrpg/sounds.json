@@ -1,0 +1,11 @@
+{
+  "vampire_sizzle": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "lightrpg:damage/vampire_sizzle",
+        "steam": true
+      }
+    ]
+  }
+}

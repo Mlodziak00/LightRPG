@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "net.lightglow.lightrpg.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "ItemMixin",
+    "MilkItemMixin",
+    "PlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "MojangModelPartMixin",
+    "PlayerEntityRendererMixin"
+  ]
+}
