@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "lightrpg",
+	"id": "racialfeats",
 	"version": "${version}",
 	"name": "Light RPG",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,24 +12,24 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/lightrpg/icon.png",
+	"icon": "assets/racialfeats/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.lightglow.lightrpg.LightRPG"
+			"net.lightglow.racialfeats.RacialFeats"
 		],
 		"client": [
-			"net.lightglow.lightrpg.client.LightRPGClient"
+			"net.lightglow.racialfeats.client.LightRPGClient"
 		],
 		"fabric-datagen": [
-			"net.lightglow.lightrpg.LightRPGDataGenerator"
+			"net.lightglow.racialfeats.RacialFeatsDataGenerator"
 		],
 		"cardinal-components-entity": [
-			"net.lightglow.lightrpg.component.EntityLightRPGComponents"
+			"net.lightglow.racialfeats.component.EntityRacialFeatsComponents"
 		]
 	},
 	"mixins": [
-		"lightrpg.mixins.json"
+		"racialfeats.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
@@ -39,8 +39,8 @@
 	},
 	"custom": {
 		"cardinal-components": [
-			"lightrpg:appearance",
-			"lightrpg:impact"
+			"racialfeats:appearance",
+			"racialfeats:impact"
 		]
 
 	}
