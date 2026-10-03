@@ -51,6 +51,11 @@ public class RacialFeats implements ModInitializer {
 		ServerPlayNetworking.send(target, payload);
 		return 1;
 	}
+	public static int openScreenItem(ServerPlayerEntity target){
+		OpenCharCustomScreenPayload payload = new OpenCharCustomScreenPayload(false);
+		ServerPlayNetworking.send(target, payload);
+		return 1;
+	}
 	public static Identifier id(String id){
 		return Identifier.of(MOD_ID, id);
 	}
